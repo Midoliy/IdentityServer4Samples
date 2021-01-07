@@ -37,7 +37,14 @@ dotnet new console -n Client
 dotnet sln add ./Client
 ```
 
+Visual Studio のソリューションプロパティでマルチスタートアッププロジェクトにするのを忘れないようにしましょう。
+起動の順番は
 
+1. IdentityServer : 開始
+2. Api : 開始
+3. Client : 開始
+
+である必要があります。
 
 ## ターゲットフレームワークの更新
 
